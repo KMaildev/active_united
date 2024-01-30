@@ -1,46 +1,34 @@
 <div class="hero-slider-area hero-slider owl-carousel owl-theme">
-    <div class="hero-slider-item bg-1">
+    <div class="hero-slider-item bg-1" style="background-image: url({{ asset('data/photo/5.jpg') }});">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container-fluid">
                     <div class="hero-slider-content one">
-                        <h1>We are providing best <span>construction</span> service</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio architecto culpa,
-                            eveniet inventore veritatis minus. Corporis molestias velit ab asperiores amet
-                            doloremque expedita in eos quasi</p>
-
-                        <div class="hero-slider-btn">
-                            <a href="about.html" class="default-btn">
-                                View more
-                            </a>
-                        </div>
+                        <h1>ACTIVE <span>UNITED</span> COMPANY LIMITED.</h1>
+                        <p>
+                            ACTIVE UNITED CO.,LTD. is the leading Manpower Recruiting Agency based in Myanmar, licensed
+                            and
+                            authorized by the Ministry of Labor, Employment and Social Security of Myanmar.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <span class="border-text">CONZIO</span>
     </div>
 
-    <div class="hero-slider-item bg-2">
+    <div class="hero-slider-item bg-2" style="background-image: url({{ asset('data/photo/6.jpg') }});">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container-fluid">
                     <div class="hero-slider-content two">
-                        <h1><span>Construction</span> & infrastructure services company</h1>
+                        <h1>ACTIVE <span>UNITED</span> COMPANY LIMITED.</h1>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio architecto culpa,
-                            eveniet inventore veritatis minus. Corporis molestias velit ab asperiores amet
-                            doloremque expedita in eos quasi</p>
-
-                        <div class="hero-slider-btn">
-                            <a href="about.html" class="default-btn">
-                                View more
-                            </a>
-                        </div>
+                        <p>
+                            A leading Manpower Recruiting Agency based in Myanmar
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <span class="border-text">CONZIO</span>
     </div>
 </div>

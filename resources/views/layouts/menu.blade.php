@@ -6,14 +6,14 @@
                     <ul class="header-left-content">
                         <li>
                             <i class="flaticon-phone-ringing"></i>
-                            <a href="tel:+1(514)312-5678">
-                                09
+                            <a href="tel:09 5003802">
+                                09 5003802, 09 785003802
                             </a>
                         </li>
                         <li>
                             <i class="flaticon-email"></i>
-                            <a href="">
-
+                            <a href="mailto:ksthaik@gmail.com ">
+                                ksthaik@gmail.com
                             </a>
                         </li>
                     </ul>
@@ -87,7 +87,7 @@
 
                                     <li>
                                         <a href="{{ route('ceo_message') }}" class="nav-link">
-                                            President's Message
+                                            MD's Message
                                         </a>
                                     </li>
 
@@ -96,19 +96,41 @@
                                             Professional Team
                                         </a>
                                     </li>
+
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            Company Profile
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
-                                <a href="{{ asset('data/company/Silver City 2023.pdf') }}">
-                                    Company Profile
-                                </a>
-                            </li>
 
 
                             <li class="nav-item">
                                 <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Manpower Services
+                                    Our Business
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="{{ route('ginkgo_japanese.index') }}">
+                                            GINKGO Japanese Language Center
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            Gayunar Shin Health Care
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Jobs
                                 </a>
                                 <ul class="dropdown-menu">
                                     @foreach ($countries as $country)

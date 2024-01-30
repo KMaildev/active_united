@@ -1,19 +1,15 @@
 @extends('layouts.main')
 @section('content')
-    <section class="team_section sec_ptb_130 pb-0 clearfix">
+    <section class="feathers-area pt-100 pb-70"
+        style="padding-top: 250px; background-image: url('{{ asset('data/our-team-banner-2.png') }}')">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="section_title text-center mb_30 wow fadeInUp2" data-wow-delay=".1s">
-                        <h4 class="small_title">Team Member</h4>
-                        <h2 class="big_title mb-0">
-                            ACTIVE UNITED CO.,LTD.
-                        </h2>
-                        <span class="biggest_title">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="single-feathers">
+                        <h3>
                             Team Member
-                        </span>
-
-                        <div class="d-text" style="font-size: 18px; color: black; text-align: justify">
+                        </h3>
+                        <p>
                             Our overseas employment agency consists of a skilled team dedicated to connecting talented
                             individuals with international job opportunities. We have a deep understanding of global
                             markets,
@@ -24,52 +20,64 @@
                             and open communication, providing personalized guidance and support to job seekers. Our
                             commitment
                             to excellence ensures successful placements and long-term relationships with clients.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="row mt__30">
+
+    <section class="team-area ptb-100">
+        <div class="container">
+            <div class="section-title">
+                <span>PROFESSIONALS</span>
+                <h2>Meet our skilled team</h2>
+            </div>
+
+            <div class="row">
                 @foreach ($teams as $team)
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp2" data-wow-delay=".1s">
-                        <div class="team_grid">
-                            <div class="item_image">
-                                <img src="{{ $team->photo }}" alt="#"
-                                    style="width: 100%; height: 280px; background-size: top; object-fit: cover;">
-                            </div>
-                            <div class="item_content">
-                                <h3 class="member_name">
-                                    {{ $team->name ?? '' }}
-                                </h3>
-                                <span class="member_title">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-team-member">
+                            <img src="{{ $team->photo }}" alt="#"
+                                style="width: 100%; height: 300px; background-size: top; object-fit: cover;">
+
+                            <div class="team-content">
+                                <span>
                                     {{ $team->position ?? '' }}
                                 </span>
-                                <ul class="square_social_links ul_li clearfix">
-                                    <li>
-                                        <a class="bg_default_lightblue" href="#!">
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="bg_default_orange" href="#!">
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="bg_default_yellow" href="#!">
-                                            <i class="fab fa-youtube"></i>
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="bg_default_purple" href="#!">
-                                            <i class="fab fa-linkedin"></i>
-                                            <i class="fab fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <h3>
+                                    {{ $team->name ?? '' }}
+                                </h3>
+
+                                <div class="team-social">
+                                    <a href="#" class="control">
+                                        <i class="bx bx-share-alt"></i>
+                                    </a>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="bx bxl-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="bx bxl-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="bx bxl-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="bx bxl-linkedin-square"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,5 +85,4 @@
             </div>
         </div>
     </section>
-    <br>
 @endsection

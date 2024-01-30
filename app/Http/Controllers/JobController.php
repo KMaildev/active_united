@@ -11,7 +11,7 @@ class JobController extends Controller
     public function show($id)
     {
         $jobs = Job::where('countrie_id', $id)->get();
-        $country = Country::findOrFail($id);
-        return view('job.show', compact('jobs', 'country'));
+        $c = Country::findOrFail($id);
+        return view('job.show', compact('jobs', 'c'));
     }
 }

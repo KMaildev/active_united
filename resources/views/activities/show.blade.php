@@ -2,21 +2,39 @@
 @section('title', 'Activities')
 @section('content')
 
-    <section class="service_section sec_ptb_130 clearfix">
+    <section class="feathers-area pt-100 pb-70"
+        style="padding-top: 250px; background-image: url('{{ asset('data/gallery-banner.jpg') }}')">
         <div class="container">
-
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
-                    <div class="section_title text-center mb_30 wow fadeInUp2" data-wow-delay=".1s">
-                        <h4 class="small_title">Gallery</h4>
-                        <h2 class="big_title mb-0">
-                            Our Gallery & Activities
-                        </h2>
-                        <span class="biggest_title">
-                            Activities
-                        </span>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="single-feathers">
+                        <h3>
+                            Checkout our photo gallery
+                        </h3>
+                        <p>
+                            Our gallery showcases a vibrant collection of photographs and testimonials from individuals who
+                            have successfully found employment through our agency. These visuals depict diverse work
+                            environments, cultural experiences, and personal growth opportunities that await those who
+                            embark on their overseas employment journey with us. From bustling cityscapes to breathtaking
+                            natural landscapes, our gallery captures the essence of working abroad and inspires our clients
+                            to explore new horizons.
+                        </p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="blog-column-three-area ptb-100">
+        <div class="container">
+
+            <div class="section-title">
+                <span>
+                    Our Gallery & Activities
+                </span>
+                <h2>
+                    Activities
+                </h2>
             </div>
 
             <div class="row">
@@ -25,22 +43,21 @@
                         $images = explode(',', $activity->images);
                     @endphp
                     @foreach ($images as $image)
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp2" data-wow-delay=".3s">
-                            <div class="service_grid">
-                                <div class="item_image">
-                                    <img src="{{ $image }}" alt="image_not_found"
-                                        style="width: 100%; height: 260px; background-size: center; object-fit: cover;">
-                                </div>
-                                <div class="item_content bg_gray">
-                                    <h3 class="item_title">
-                                        {{ $activity->title ?? '' }}
-                                    </h3>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="single-blog-post" style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;">
+                                <img src="{{ $image }}" alt="image_not_found"
+                                    style="width: 100%; height: 260px; background-size: center; object-fit: cover;">
+
+                                <div class="news-content">
+                                    <a href="#">
+                                        <h3>
+                                            {{ $activity->title ?? '' }}
+                                        </h3>
+                                    </a>
+
                                     <p>
                                         {!! $activity->description ?? '' !!}
                                     </p>
-                                    <span class="bg_icon">
-                                        <img src="{{ asset('data/company/mark.png') }}" alt="icon_not_found">
-                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -48,6 +65,6 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </div>
 
 @endsection

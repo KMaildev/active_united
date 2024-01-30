@@ -323,8 +323,8 @@ class ComposerStaticInitf0897e72a9d3723a1c462cdd5cdddd17
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -512,6 +512,7 @@ class ComposerStaticInitf0897e72a9d3723a1c462cdd5cdddd17
         'App\\Http\\Controllers\\EmployerController' => __DIR__ . '/../..' . '/app/Http/Controllers/EmployerController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\JobController' => __DIR__ . '/../..' . '/app/Http/Controllers/JobController.php',
+        'App\\Http\\Controllers\\LanguageCenterController' => __DIR__ . '/../..' . '/app/Http/Controllers/LanguageCenterController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -531,6 +532,7 @@ class ComposerStaticInitf0897e72a9d3723a1c462cdd5cdddd17
         'App\\Models\\Cv' => __DIR__ . '/../..' . '/app/Models/Cv.php',
         'App\\Models\\Employer' => __DIR__ . '/../..' . '/app/Models/Employer.php',
         'App\\Models\\Job' => __DIR__ . '/../..' . '/app/Models/Job.php',
+        'App\\Models\\LanguageCenterGallery' => __DIR__ . '/../..' . '/app/Models/LanguageCenterGallery.php',
         'App\\Models\\Team' => __DIR__ . '/../..' . '/app/Models/Team.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
